@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "morning_helper",
+    "liveServer.settings.port": 8001,
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingModuleSource": "none",
+        "reportShadowedImports": "none"
+    }
+}
