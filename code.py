@@ -53,7 +53,8 @@ time_response.close()
 rtc.RTC().datetime = time.localtime(time_data['unixtime'])
 #---------------------------------------------------------------------------------------------------
 #Fetch weather data from OpenWeatherMap
-weather_response = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=19ccdc9363d94d7eeca102ec82c34007")
+api_key = os.getenv('WEATHER_API_KEY')
+weather_response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid={api_key}")
 data = weather_response.json()
 weather_response.close()
 rain_last_hour = 'None'
